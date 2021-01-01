@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891428259EF5DC0023C449 /* AppDelegate.swift */; };
+		9389142B259EF5DC0023C449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389142A259EF5DC0023C449 /* ViewController.swift */; };
+		9389142E259EF5DC0023C449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9389142C259EF5DC0023C449 /* Main.storyboard */; };
+		93891430259EF5DE0023C449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9389142F259EF5DE0023C449 /* Assets.xcassets */; };
+		93891433259EF5DE0023C449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93891431259EF5DE0023C449 /* LaunchScreen.storyboard */; };
+		9389143E259EF5DE0023C449 /* GogoLookWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389143D259EF5DE0023C449 /* GogoLookWorkTests.swift */; };
+		93891449259EF5DE0023C449 /* GogoLookWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891448259EF5DE0023C449 /* GogoLookWorkUITests.swift */; };
+		93891458259EF6330023C449 /* TopObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891457259EF6330023C449 /* TopObject.swift */; };
+		9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891459259EF7F80023C449 /* ResponseBody.swift */; };
+		9389145D259EFC710023C449 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9389145C259EFC710023C449 /* Alamofire.framework */; };
+		93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891460259EFD1A0023C449 /* HttpHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9389143A259EF5DE0023C449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9389141D259EF5DC0023C449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93891424259EF5DC0023C449;
+			remoteInfo = GogoLookWork;
+		};
+		93891445259EF5DE0023C449 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9389141D259EF5DC0023C449 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93891424259EF5DC0023C449;
+			remoteInfo = GogoLookWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93891425259EF5DC0023C449 /* GogoLookWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogoLookWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93891428259EF5DC0023C449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9389142A259EF5DC0023C449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9389142D259EF5DC0023C449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9389142F259EF5DE0023C449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93891432259EF5DE0023C449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93891434259EF5DE0023C449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93891439259EF5DE0023C449 /* GogoLookWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GogoLookWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9389143D259EF5DE0023C449 /* GogoLookWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GogoLookWorkTests.swift; sourceTree = "<group>"; };
+		9389143F259EF5DE0023C449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93891444259EF5DE0023C449 /* GogoLookWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GogoLookWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93891448259EF5DE0023C449 /* GogoLookWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GogoLookWorkUITests.swift; sourceTree = "<group>"; };
+		9389144A259EF5DE0023C449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93891457259EF6330023C449 /* TopObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopObject.swift; sourceTree = "<group>"; };
+		93891459259EF7F80023C449 /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
+		9389145C259EFC710023C449 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		93891460259EFD1A0023C449 /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93891422259EF5DC0023C449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9389145D259EFC710023C449 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891436259EF5DE0023C449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891441259EF5DE0023C449 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9389141C259EF5DC0023C449 = {
+			isa = PBXGroup;
+			children = (
+				93891427259EF5DC0023C449 /* GogoLookWork */,
+				9389143C259EF5DE0023C449 /* GogoLookWorkTests */,
+				93891447259EF5DE0023C449 /* GogoLookWorkUITests */,
+				93891426259EF5DC0023C449 /* Products */,
+				9389145B259EFC710023C449 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93891426259EF5DC0023C449 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93891425259EF5DC0023C449 /* GogoLookWork.app */,
+				93891439259EF5DE0023C449 /* GogoLookWorkTests.xctest */,
+				93891444259EF5DE0023C449 /* GogoLookWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93891427259EF5DC0023C449 /* GogoLookWork */ = {
+			isa = PBXGroup;
+			children = (
+				9389145F259EFCD20023C449 /* Helper */,
+				93891428259EF5DC0023C449 /* AppDelegate.swift */,
+				9389142A259EF5DC0023C449 /* ViewController.swift */,
+				9389142C259EF5DC0023C449 /* Main.storyboard */,
+				9389142F259EF5DE0023C449 /* Assets.xcassets */,
+				93891431259EF5DE0023C449 /* LaunchScreen.storyboard */,
+				93891434259EF5DE0023C449 /* Info.plist */,
+			);
+			path = GogoLookWork;
+			sourceTree = "<group>";
+		};
+		9389143C259EF5DE0023C449 /* GogoLookWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9389143D259EF5DE0023C449 /* GogoLookWorkTests.swift */,
+				9389143F259EF5DE0023C449 /* Info.plist */,
+			);
+			path = GogoLookWorkTests;
+			sourceTree = "<group>";
+		};
+		93891447259EF5DE0023C449 /* GogoLookWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93891448259EF5DE0023C449 /* GogoLookWorkUITests.swift */,
+				9389144A259EF5DE0023C449 /* Info.plist */,
+			);
+			path = GogoLookWorkUITests;
+			sourceTree = "<group>";
+		};
+		93891456259EF60B0023C449 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93891457259EF6330023C449 /* TopObject.swift */,
+				93891459259EF7F80023C449 /* ResponseBody.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9389145B259EFC710023C449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9389145C259EFC710023C449 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9389145F259EFCD20023C449 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				93891460259EFD1A0023C449 /* HttpHelper.swift */,
+				93891456259EF60B0023C449 /* Model */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93891424259EF5DC0023C449 /* GogoLookWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9389144D259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWork" */;
+			buildPhases = (
+				93891421259EF5DC0023C449 /* Sources */,
+				93891422259EF5DC0023C449 /* Frameworks */,
+				93891423259EF5DC0023C449 /* Resources */,
+				9389145E259EFC770023C449 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GogoLookWork;
+			productName = GogoLookWork;
+			productReference = 93891425259EF5DC0023C449 /* GogoLookWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93891438259EF5DE0023C449 /* GogoLookWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93891450259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWorkTests" */;
+			buildPhases = (
+				93891435259EF5DE0023C449 /* Sources */,
+				93891436259EF5DE0023C449 /* Frameworks */,
+				93891437259EF5DE0023C449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9389143B259EF5DE0023C449 /* PBXTargetDependency */,
+			);
+			name = GogoLookWorkTests;
+			productName = GogoLookWorkTests;
+			productReference = 93891439259EF5DE0023C449 /* GogoLookWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93891443259EF5DE0023C449 /* GogoLookWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93891453259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWorkUITests" */;
+			buildPhases = (
+				93891440259EF5DE0023C449 /* Sources */,
+				93891441259EF5DE0023C449 /* Frameworks */,
+				93891442259EF5DE0023C449 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93891446259EF5DE0023C449 /* PBXTargetDependency */,
+			);
+			name = GogoLookWorkUITests;
+			productName = GogoLookWorkUITests;
+			productReference = 93891444259EF5DE0023C449 /* GogoLookWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9389141D259EF5DC0023C449 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "施崇邑";
+				TargetAttributes = {
+					93891424259EF5DC0023C449 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					93891438259EF5DE0023C449 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 93891424259EF5DC0023C449;
+					};
+					93891443259EF5DE0023C449 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 93891424259EF5DC0023C449;
+					};
+				};
+			};
+			buildConfigurationList = 93891420259EF5DC0023C449 /* Build configuration list for PBXProject "GogoLookWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9389141C259EF5DC0023C449;
+			productRefGroup = 93891426259EF5DC0023C449 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93891424259EF5DC0023C449 /* GogoLookWork */,
+				93891438259EF5DE0023C449 /* GogoLookWorkTests */,
+				93891443259EF5DE0023C449 /* GogoLookWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93891423259EF5DC0023C449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93891433259EF5DE0023C449 /* LaunchScreen.storyboard in Resources */,
+				93891430259EF5DE0023C449 /* Assets.xcassets in Resources */,
+				9389142E259EF5DC0023C449 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891437259EF5DE0023C449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891442259EF5DE0023C449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9389145E259EFC770023C449 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93891421259EF5DC0023C449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9389142B259EF5DC0023C449 /* ViewController.swift in Sources */,
+				93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */,
+				93891458259EF6330023C449 /* TopObject.swift in Sources */,
+				9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */,
+				93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891435259EF5DE0023C449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9389143E259EF5DE0023C449 /* GogoLookWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93891440259EF5DE0023C449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93891449259EF5DE0023C449 /* GogoLookWorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9389143B259EF5DE0023C449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93891424259EF5DC0023C449 /* GogoLookWork */;
+			targetProxy = 9389143A259EF5DE0023C449 /* PBXContainerItemProxy */;
+		};
+		93891446259EF5DE0023C449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93891424259EF5DC0023C449 /* GogoLookWork */;
+			targetProxy = 93891445259EF5DE0023C449 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9389142C259EF5DC0023C449 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9389142D259EF5DC0023C449 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93891431259EF5DE0023C449 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93891432259EF5DE0023C449 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9389144B259EF5DE0023C449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9389144C259EF5DE0023C449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9389144E259EF5DE0023C449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6996GTNH8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GogoLookWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9389144F259EF5DE0023C449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6996GTNH8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GogoLookWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93891451259EF5DE0023C449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GogoLookWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GogoLookWork.app/GogoLookWork";
+			};
+			name = Debug;
+		};
+		93891452259EF5DE0023C449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GogoLookWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GogoLookWork.app/GogoLookWork";
+			};
+			name = Release;
+		};
+		93891454259EF5DE0023C449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GogoLookWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GogoLookWork;
+			};
+			name = Debug;
+		};
+		93891455259EF5DE0023C449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GogoLookWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = None.GogoLookWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GogoLookWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93891420259EF5DC0023C449 /* Build configuration list for PBXProject "GogoLookWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9389144B259EF5DE0023C449 /* Debug */,
+				9389144C259EF5DE0023C449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9389144D259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9389144E259EF5DE0023C449 /* Debug */,
+				9389144F259EF5DE0023C449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93891450259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93891451259EF5DE0023C449 /* Debug */,
+				93891452259EF5DE0023C449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93891453259EF5DE0023C449 /* Build configuration list for PBXNativeTarget "GogoLookWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93891454259EF5DE0023C449 /* Debug */,
+				93891455259EF5DE0023C449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9389141D259EF5DC0023C449 /* Project object */;
+}
