@@ -21,6 +21,8 @@ class ViewController: UIViewController {
 
     func setUI() {
         view.addSubview(collectionView)
+        collectionView.register(UINib(nibName: CollectionViewCell.reuseId, bundle: nil),
+                                forCellWithReuseIdentifier: CollectionViewCell.reuseId)
         collectionView.dataSource = self
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor)
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor)
@@ -38,4 +40,8 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
+}
+
+extension UICollectionViewCell {
+    static var reuseId: String { return "\(self)" }
 }

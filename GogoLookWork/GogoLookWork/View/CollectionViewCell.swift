@@ -15,9 +15,22 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var SDateLabel: UILabel!
     @IBOutlet weak var EDateLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    func configure(_ item: TopObject?) {
+        guard let item = item,
+            let imageUrl = item.imageUrl,
+            let title = item.title,
+            let rank = item.rank,
+            let sDate = item.startDate,
+            let eDate = item.endDate else { return }
+//        imageView.image = imageUrl
+        titleLabel.text = title
+        rankLabel.text = "\(rank)"
+        SDateLabel.text = sDate
+        EDateLabel.text = eDate
+    }
 }
