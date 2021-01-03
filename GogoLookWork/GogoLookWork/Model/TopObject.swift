@@ -34,3 +34,5 @@ struct TopObject: Codable {
         case score
     }
 }
+
+extension TopObject: Equatable {}

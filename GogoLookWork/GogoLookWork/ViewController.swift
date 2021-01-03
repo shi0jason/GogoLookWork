@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         return view
     }()
 
-    let viewModel = MainViewModel()
+    let viewModel = MainViewModel(dataSource: MainRemoteDataSource())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.collectionView.reloadData()
             }
-            print("Reload")
         }
     }
 

@@ -12,14 +12,14 @@ class MainViewModel {
     
     private var responseBody: ResponseBody?
     
+    let mainDataSource: MainDataSource
+    
+    init(dataSource: MainDataSource) {
+        mainDataSource = dataSource
+    }
+
     func fetchRequest(handler: @escaping(ResponseBody?, Error?) -> ()) {
-        let targetUrl = "https://api.jikan.moe/v3/top/anime/1/upcoming"
-        let request = RequestSet(url: targetUrl,
-                                 method: .get,
-                                 parameters: nil,
-                                 headers: nil)
-        
-        HttpHelper.sharedInstance.httpAction(request: request) { (ResponseBody, Error) in
+        mainDataSource.fetchRequest { (ResponseBody, Error) in
             if let body = ResponseBody {
                 self.responseBody = body
             }

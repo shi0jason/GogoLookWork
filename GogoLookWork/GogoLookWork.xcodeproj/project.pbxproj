@@ -22,6 +22,15 @@
 		9389146625A1ECC00023C449 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146525A1ECC00023C449 /* MainViewModel.swift */; };
 		9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146825A1EF700023C449 /* CollectionViewCell.swift */; };
 		9389146B25A1EF700023C449 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9389146925A1EF700023C449 /* CollectionViewCell.xib */; };
+		93A2087025A20E7F006ED129 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2086F25A20E7F006ED129 /* MainDataSource.swift */; };
+		93A2087225A20E9E006ED129 /* MainRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2087125A20E9E006ED129 /* MainRemoteDataSource.swift */; };
+		93A2087425A21040006ED129 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2087325A21040006ED129 /* MainViewModelTests.swift */; };
+		93A2087525A210FD006ED129 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2086F25A20E7F006ED129 /* MainDataSource.swift */; };
+		93A2087625A21101006ED129 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146525A1ECC00023C449 /* MainViewModel.swift */; };
+		93A2087A25A21151006ED129 /* MockMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2087925A21151006ED129 /* MockMainDataSource.swift */; };
+		93A2087D25A2119F006ED129 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2087C25A2119F006ED129 /* DummyData.swift */; };
+		93A2087E25A211C1006ED129 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891459259EF7F80023C449 /* ResponseBody.swift */; };
+		93A2087F25A211C3006ED129 /* TopObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891457259EF6330023C449 /* TopObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +72,11 @@
 		9389146525A1ECC00023C449 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9389146825A1EF700023C449 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9389146925A1EF700023C449 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		93A2086F25A20E7F006ED129 /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		93A2087125A20E9E006ED129 /* MainRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRemoteDataSource.swift; sourceTree = "<group>"; };
+		93A2087325A21040006ED129 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		93A2087925A21151006ED129 /* MockMainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainDataSource.swift; sourceTree = "<group>"; };
+		93A2087C25A2119F006ED129 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,7 @@
 		93891427259EF5DC0023C449 /* GogoLookWork */ = {
 			isa = PBXGroup;
 			children = (
+				93A2086B25A20D10006ED129 /* DataSource */,
 				9389146725A1EF410023C449 /* View */,
 				9389146425A1ECA20023C449 /* ViewModel */,
 				93891456259EF60B0023C449 /* Model */,
@@ -132,6 +147,9 @@
 		9389143C259EF5DE0023C449 /* GogoLookWorkTests */ = {
 			isa = PBXGroup;
 			children = (
+				93A2087B25A21189006ED129 /* MockData */,
+				93A2087825A2112B006ED129 /* DataSource */,
+				93A2087725A2111D006ED129 /* ViewModel */,
 				9389143D259EF5DE0023C449 /* GogoLookWorkTests.swift */,
 				9389143F259EF5DE0023C449 /* Info.plist */,
 			);
@@ -188,6 +206,39 @@
 				9389146925A1EF700023C449 /* CollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		93A2086B25A20D10006ED129 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				93A2086F25A20E7F006ED129 /* MainDataSource.swift */,
+				93A2087125A20E9E006ED129 /* MainRemoteDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		93A2087725A2111D006ED129 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93A2087325A21040006ED129 /* MainViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93A2087825A2112B006ED129 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				93A2087925A21151006ED129 /* MockMainDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		93A2087B25A21189006ED129 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				93A2087C25A2119F006ED129 /* DummyData.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9389146625A1ECC00023C449 /* MainViewModel.swift in Sources */,
+				93A2087225A20E9E006ED129 /* MainRemoteDataSource.swift in Sources */,
 				9389142B259EF5DC0023C449 /* ViewController.swift in Sources */,
 				9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */,
 				93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */,
@@ -352,6 +404,7 @@
 				93891458259EF6330023C449 /* TopObject.swift in Sources */,
 				9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */,
 				93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */,
+				93A2087025A20E7F006ED129 /* MainDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +412,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A2087E25A211C1006ED129 /* ResponseBody.swift in Sources */,
+				93A2087D25A2119F006ED129 /* DummyData.swift in Sources */,
 				9389143E259EF5DE0023C449 /* GogoLookWorkTests.swift in Sources */,
+				93A2087425A21040006ED129 /* MainViewModelTests.swift in Sources */,
+				93A2087F25A211C3006ED129 /* TopObject.swift in Sources */,
+				93A2087525A210FD006ED129 /* MainDataSource.swift in Sources */,
+				93A2087A25A21151006ED129 /* MockMainDataSource.swift in Sources */,
+				93A2087625A21101006ED129 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
