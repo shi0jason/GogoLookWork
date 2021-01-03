@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93004EA525A21753008F2623 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93004EA325A21753008F2623 /* WebController.swift */; };
+		93004EA625A21753008F2623 /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93004EA425A21753008F2623 /* WebController.xib */; };
 		93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891428259EF5DC0023C449 /* AppDelegate.swift */; };
 		9389142B259EF5DC0023C449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389142A259EF5DC0023C449 /* ViewController.swift */; };
 		9389142E259EF5DC0023C449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9389142C259EF5DC0023C449 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93004EA325A21753008F2623 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		93004EA425A21753008F2623 /* WebController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebController.xib; sourceTree = "<group>"; };
 		93891425259EF5DC0023C449 /* GogoLookWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogoLookWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93891428259EF5DC0023C449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9389142A259EF5DC0023C449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93004EA725A21759008F2623 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93891428259EF5DC0023C449 /* AppDelegate.swift */,
+				9389142A259EF5DC0023C449 /* ViewController.swift */,
+				93004EA325A21753008F2623 /* WebController.swift */,
+				93004EA425A21753008F2623 /* WebController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		9389141C259EF5DC0023C449 = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +149,7 @@
 				9389146425A1ECA20023C449 /* ViewModel */,
 				93891456259EF60B0023C449 /* Model */,
 				9389145F259EFCD20023C449 /* Helper */,
-				93891428259EF5DC0023C449 /* AppDelegate.swift */,
-				9389142A259EF5DC0023C449 /* ViewController.swift */,
+				93004EA725A21759008F2623 /* ViewController */,
 				9389142C259EF5DC0023C449 /* Main.storyboard */,
 				9389142F259EF5DE0023C449 /* Assets.xcassets */,
 				93891431259EF5DE0023C449 /* LaunchScreen.storyboard */,
@@ -349,6 +363,7 @@
 				93891433259EF5DE0023C449 /* LaunchScreen.storyboard in Resources */,
 				93891430259EF5DE0023C449 /* Assets.xcassets in Resources */,
 				9389146B25A1EF700023C449 /* CollectionViewCell.xib in Resources */,
+				93004EA625A21753008F2623 /* WebController.xib in Resources */,
 				9389142E259EF5DC0023C449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +416,7 @@
 				9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */,
 				93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */,
 				9389146325A1E2C00023C449 /* RequestSet.swift in Sources */,
+				93004EA525A21753008F2623 /* WebController.swift in Sources */,
 				93891458259EF6330023C449 /* TopObject.swift in Sources */,
 				9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */,
 				93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */,

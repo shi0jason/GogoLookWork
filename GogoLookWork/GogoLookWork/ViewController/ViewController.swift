@@ -70,6 +70,15 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         cell.configure(viewModel.cellViewModel(at: indexPath))
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let topObject = viewModel.cellViewModel(at: indexPath),
+            let urlPath = topObject.url,
+            let url = URL(string: urlPath) {
+            let controller = WebController(url: url)
+            self.navigationController?.pushViewController(controller, animated: false)
+        }
+    }
 }
 
 extension UICollectionViewCell {
