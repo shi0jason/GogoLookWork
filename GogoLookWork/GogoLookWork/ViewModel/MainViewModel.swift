@@ -12,7 +12,7 @@ class MainViewModel {
     
     private var responseBody: ResponseBody?
     
-    func fetchRequest() {
+    func fetchRequest(handler: @escaping(ResponseBody?, Error?) -> ()) {
         let targetUrl = "https://api.jikan.moe/v3/top/anime/1/upcoming"
         let request = RequestSet(url: targetUrl,
                                  method: .get,
@@ -20,9 +20,10 @@ class MainViewModel {
                                  headers: nil)
         
         HttpHelper.sharedInstance.httpAction(request: request) { (ResponseBody, Error) in
-            if let response = ResponseBody {
-                print(response)
+            if let body = ResponseBody {
+                self.responseBody = body
             }
+            handler(ResponseBody, Error)
         }
     }
     

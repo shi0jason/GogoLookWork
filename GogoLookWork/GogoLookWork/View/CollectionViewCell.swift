@@ -18,19 +18,38 @@ class CollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        setUI()
+    }
+
+    func setUI() {
+        rankLabel.textColor = UIColor.red
     }
     
     func configure(_ item: TopObject?) {
-        guard let item = item,
-            let imageUrl = item.imageUrl,
-            let title = item.title,
-            let rank = item.rank,
-            let sDate = item.startDate,
-            let eDate = item.endDate else { return }
-//        imageView.image = imageUrl
-        titleLabel.text = title
-        rankLabel.text = "\(rank)"
-        SDateLabel.text = sDate
-        EDateLabel.text = eDate
+        guard let item = item else { return }
+        if let imageUrl = item.imageUrl {
+            if let url = URL(string: imageUrl) {
+                URLSession.shared.dataTask(with: url) { (data, response, error) in
+                    if let data = data,
+                        let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self.imageView.image = image
+                        }
+                    }
+                    }.resume()
+            }
+        }
+        if let title = item.title {
+            titleLabel.text = title
+        }
+        if let rank = item.rank {
+            rankLabel.text = "Rank:\(rank)"
+        }
+        if let sDate = item.startDate {
+            SDateLabel.text = sDate
+        }
+        if let eDate = item.endDate {
+            EDateLabel.text = eDate
+        }
     }
 }
