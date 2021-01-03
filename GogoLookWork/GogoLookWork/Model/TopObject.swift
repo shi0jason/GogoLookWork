@@ -9,16 +9,16 @@
 struct TopObject: Codable {
 
     let id: Int
-    let rank: Int
-    let title: String
-    let url: String
-    let imageUrl: String
-    let type: String
-    let episodes: Int
-    let startDate: String
-    let endDate: String
-    let members: Int
-    let score: Int
+    let rank: Int?
+    let title: String?
+    let url: String?
+    let imageUrl: String?
+    let type: String?
+    let episodes: Int?
+    let startDate: String?
+    let endDate: String?
+    let members: Int?
+    let score: Int?
 
     enum CodingKeys: String, CodingKey {
         case id = "mal_id"

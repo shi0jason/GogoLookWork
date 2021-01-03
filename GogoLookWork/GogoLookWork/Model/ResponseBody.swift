@@ -10,7 +10,7 @@ struct ResponseBody: Codable {
     let requestHash: String?
     let requestCached: Bool?
     let requestCacheExpiry: Int?
-    let top: [TopObject]
+    let top: [TopObject]?
     
     enum CodingKeys: String, CodingKey {
         case requestHash = "request_hash"

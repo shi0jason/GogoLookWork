@@ -18,6 +18,10 @@
 		9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891459259EF7F80023C449 /* ResponseBody.swift */; };
 		9389145D259EFC710023C449 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9389145C259EFC710023C449 /* Alamofire.framework */; };
 		93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891460259EFD1A0023C449 /* HttpHelper.swift */; };
+		9389146325A1E2C00023C449 /* RequestSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146225A1E2C00023C449 /* RequestSet.swift */; };
+		9389146625A1ECC00023C449 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146525A1ECC00023C449 /* MainViewModel.swift */; };
+		9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389146825A1EF700023C449 /* CollectionViewCell.swift */; };
+		9389146B25A1EF700023C449 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9389146925A1EF700023C449 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		93891459259EF7F80023C449 /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		9389145C259EFC710023C449 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		93891460259EFD1A0023C449 /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		9389146225A1E2C00023C449 /* RequestSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSet.swift; sourceTree = "<group>"; };
+		9389146525A1ECC00023C449 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9389146825A1EF700023C449 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9389146925A1EF700023C449 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,9 @@
 		93891427259EF5DC0023C449 /* GogoLookWork */ = {
 			isa = PBXGroup;
 			children = (
+				9389146725A1EF410023C449 /* View */,
+				9389146425A1ECA20023C449 /* ViewModel */,
+				93891456259EF60B0023C449 /* Model */,
 				9389145F259EFCD20023C449 /* Helper */,
 				93891428259EF5DC0023C449 /* AppDelegate.swift */,
 				9389142A259EF5DC0023C449 /* ViewController.swift */,
@@ -157,9 +168,26 @@
 			isa = PBXGroup;
 			children = (
 				93891460259EFD1A0023C449 /* HttpHelper.swift */,
-				93891456259EF60B0023C449 /* Model */,
+				9389146225A1E2C00023C449 /* RequestSet.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		9389146425A1ECA20023C449 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9389146525A1ECC00023C449 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9389146725A1EF410023C449 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9389146825A1EF700023C449 /* CollectionViewCell.swift */,
+				9389146925A1EF700023C449 /* CollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +297,7 @@
 			files = (
 				93891433259EF5DE0023C449 /* LaunchScreen.storyboard in Resources */,
 				93891430259EF5DE0023C449 /* Assets.xcassets in Resources */,
+				9389146B25A1EF700023C449 /* CollectionViewCell.xib in Resources */,
 				9389142E259EF5DC0023C449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,8 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9389146625A1ECC00023C449 /* MainViewModel.swift in Sources */,
 				9389142B259EF5DC0023C449 /* ViewController.swift in Sources */,
+				9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */,
 				93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */,
+				9389146325A1E2C00023C449 /* RequestSet.swift in Sources */,
 				93891458259EF6330023C449 /* TopObject.swift in Sources */,
 				9389145A259EF7F80023C449 /* ResponseBody.swift in Sources */,
 				93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */,
