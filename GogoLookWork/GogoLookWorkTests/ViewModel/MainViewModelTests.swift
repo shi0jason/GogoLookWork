@@ -39,4 +39,24 @@ class MainViewModelTests: XCTestCase {
             )
         }
     }
+    
+    func testShouldLoadMore() throws {
+        viewModel.fetchRequest { (ResponseBody, Error) in
+            XCTAssertEqual(
+                self.viewModel.shouldLoadMore(at: 0),
+                false
+            )
+        }
+    }
+    
+    func testLoadMore() throws {
+        viewModel.fetchRequest { (_,_) in
+            self.viewModel.loadMore(handler: { (_,_) in
+                XCTAssertEqual(
+                    self.viewModel.numberOfResults,
+                    1
+                )
+            })
+        }
+    }
 }
