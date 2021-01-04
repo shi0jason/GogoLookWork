@@ -15,7 +15,7 @@ class MainViewModelTests: XCTestCase {
     func testNumberOfSections() throws {
         viewModel.fetchRequest { (ResponseBody, Error) in
             XCTAssertEqual(
-                self.viewModel.numberOfSections,
+                self.viewModel.numberOfResults,
                 DummyData.responseBody.top?.count
             )
         }
