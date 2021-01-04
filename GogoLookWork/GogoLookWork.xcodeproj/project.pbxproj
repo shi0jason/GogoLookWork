@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93004EA525A21753008F2623 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93004EA325A21753008F2623 /* WebController.swift */; };
 		93004EA625A21753008F2623 /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93004EA425A21753008F2623 /* WebController.xib */; };
+		93004EA925A21FB4008F2623 /* DefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93004EA825A21FB4008F2623 /* DefaultHelper.swift */; };
 		93891429259EF5DC0023C449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93891428259EF5DC0023C449 /* AppDelegate.swift */; };
 		9389142B259EF5DC0023C449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389142A259EF5DC0023C449 /* ViewController.swift */; };
 		9389142E259EF5DC0023C449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9389142C259EF5DC0023C449 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		93004EA325A21753008F2623 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		93004EA425A21753008F2623 /* WebController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebController.xib; sourceTree = "<group>"; };
+		93004EA825A21FB4008F2623 /* DefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHelper.swift; sourceTree = "<group>"; };
 		93891425259EF5DC0023C449 /* GogoLookWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GogoLookWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93891428259EF5DC0023C449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9389142A259EF5DC0023C449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				93891460259EFD1A0023C449 /* HttpHelper.swift */,
 				9389146225A1E2C00023C449 /* RequestSet.swift */,
+				93004EA825A21FB4008F2623 /* DefaultHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				9389146625A1ECC00023C449 /* MainViewModel.swift in Sources */,
 				93A2087225A20E9E006ED129 /* MainRemoteDataSource.swift in Sources */,
 				9389142B259EF5DC0023C449 /* ViewController.swift in Sources */,
+				93004EA925A21FB4008F2623 /* DefaultHelper.swift in Sources */,
 				9389146A25A1EF700023C449 /* CollectionViewCell.swift in Sources */,
 				93891461259EFD1A0023C449 /* HttpHelper.swift in Sources */,
 				9389146325A1E2C00023C449 /* RequestSet.swift in Sources */,
