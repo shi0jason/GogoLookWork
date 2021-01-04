@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         return view
     }()
 
-    let viewModel = MainViewModel(dataSource: MainRemoteDataSource())
+    private let viewModel = MainViewModel(dataSource: MainRemoteDataSource())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfSections
+        return viewModel.numberOfResults
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,6 +77,14 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             let url = URL(string: urlPath) {
             let controller = WebController(url: url)
             self.navigationController?.pushViewController(controller, animated: false)
+        }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if viewModel.shouldLoadMore(at: indexPath.item) {
+            viewModel.loadMore { (ResponseBody, Error) in
+                self.collectionView.reloadData()
+            }
         }
     }
 }

@@ -7,9 +7,9 @@
 //
 
 class MainRemoteDataSource: MainDataSource {
-
-    func fetchRequest(handler: @escaping (ResponseBody?, Error?) -> ()) {
-        let targetUrl = "https://api.jikan.moe/v3/top/anime/1/upcoming"
+    
+    func fetchRequest(loadCount: Int, handler: @escaping (ResponseBody?, Error?) -> ()) {
+        let targetUrl = "https://api.jikan.moe/v3/top/anime/\(loadCount)/upcoming"
         let request = RequestSet(url: targetUrl,
                                  method: .get,
                                  parameters: nil,

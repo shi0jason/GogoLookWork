@@ -9,5 +9,5 @@
 
 protocol MainDataSource {
 
-    func fetchRequest(handler: @escaping(ResponseBody?, Error?) -> ())
+    func fetchRequest(loadCount: Int, handler: @escaping(ResponseBody?, Error?) -> ())
 }
