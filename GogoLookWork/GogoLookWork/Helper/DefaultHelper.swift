@@ -7,14 +7,18 @@
 //
 
 import Foundation
+
 class DefaultHelper {
     
-    func setFlag(at id: Int) {
+    static func setFlag(at id: Int) {
         if let favoriteDict = UserDefaults.standard.dictionary(forKey: "Favorite") {
             var dict = favoriteDict
             if let idValue = dict["\(id)"] as? Bool {
                 dict["\(id)"] = idValue == true ? false : true
                 UserDefaults.standard.set(dict, forKey: "Favorite")
+            } else {
+                dict["\(id)"] = true
+                UserDefaults.standard.set(dict , forKey: "Favorite")
             }
         } else {
             let dict = ["\(id)": true]
@@ -22,7 +26,7 @@ class DefaultHelper {
         }
     }
     
-    func getFlag(at id: Int) -> Bool {
+    static func getFlag(at id: Int) -> Bool {
         if let favoriteDict = UserDefaults.standard.dictionary(forKey: "Favorite") {
             var dict = favoriteDict
             if let idValue = dict["\(id)"] as? Bool {

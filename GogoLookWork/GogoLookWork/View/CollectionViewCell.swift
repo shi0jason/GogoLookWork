@@ -10,11 +10,15 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var favoriteImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var SDateLabel: UILabel!
     @IBOutlet weak var EDateLabel: UILabel!
+
+    private var item: TopObject?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,10 +27,13 @@ class CollectionViewCell: UICollectionViewCell {
 
     func setUI() {
         rankLabel.textColor = UIColor.red
+        titleLabel.font = UIFont.systemFont(ofSize: 10)
     }
     
     func configure(_ item: TopObject?) {
+        self.item = item
         guard let item = item else { return }
+        favoriteImageView.image = UIImage(named: DefaultHelper.getFlag(at: item.id) ? "favorite" : "unFavorite")
         if let imageUrl = item.imageUrl {
             if let url = URL(string: imageUrl) {
                 URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -50,6 +57,13 @@ class CollectionViewCell: UICollectionViewCell {
         }
         if let eDate = item.endDate {
             EDateLabel.text = eDate
+        }
+    }
+
+    @IBAction func favoriteAction(_ sender: Any) {
+        if let item = self.item {
+            DefaultHelper.setFlag(at: item.id)
+            favoriteImageView.image = UIImage(named: DefaultHelper.getFlag(at: item.id) ? "favorite" : "unFavorite")
         }
     }
 }
